@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit Rai | Frontend Developer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111827;
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 80px 8%;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+        }
+
+        .hero-text span {
+            color: #38bdf8;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .hero img {
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(37, 99, 235, .5);
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 30px;
+            color: #38bdf8;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background: #111827;
+            padding: 25px;
+            text-align: center;
+        }
+
+        @media(max-width:768px) {
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 40px;
+                width: 250px;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Ankit Rai</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-text">
+            <h3>Frontend Developer</h3>
+
+            <h1>Hi, I'm <span>Ankit Rai</span></h1>
+
+            <p>
+                MCA Graduate passionate about Frontend Development.
+                I build responsive and modern web applications using
+                React.js, JavaScript, HTML, CSS, Spring Boot and MySQL.
+            </p>
+
+            <a href="#" class="btn">Download Resume</a>
+            <a href="#contact" class="btn">Contact Me</a>
+
+        </div>
+
+        <img src="profile.jpg.jpeg" alt="Ankit Rai">
+
+    </section>
+
+    <section id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+
+            <p>
+                I am Ankit Rai, an MCA Graduate with a strong passion for
+                Frontend Development and modern web technologies.
+                I specialize in React.js, JavaScript, HTML5, CSS3,
+                Bootstrap, and MySQL.
+
+                My goal is to work as a Frontend Developer and build
+                modern, user-friendly web applications.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section id="skills">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill-box">
+                <h3>Frontend</h3>
+                <p>HTML5<br>CSS3<br>JavaScript<br>React.js<br>Bootstrap<br></p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Backend</h3>
+                <p>Java<br>Spring Boot<br>Node.js<br>REST APIs</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Database</h3>
+                <p>MySQL</p>
+            </div>
+
+            <div class="skill-box">
+                <h3>Tools</h3>
+                <p>Git<br>GitHub<br>VS Code<br>Postman</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project">
+            <h3>Go-EMS</h3>
+            <p>
+                Employee Management System using React.js, Spring Boot,
+                REST APIs and MySQL.
+            </p>
+        </div>
+
+        <div class="project">
+            <h3>SaanviMart</h3>
+            <p>
+                E-Commerce Application developed using React.js,
+                JavaScript and MySQL.
+            </p>
+        </div>
+
+    </section>
+
+    <section id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="card">
+            <h3>MCA</h3>
+            <p>IIMT Group of Colleges (AKTU)</p>
+            <p>2024 - 2026 | CGPA: 7.50</p>
+        </div>
+
+        <div class="card">
+            <h3>BCA</h3>
+            <p>Microtek College of Management & Technology</p>
+            <p>2021 - 2024 | 73.66%</p>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Internships</h2>
+
+        <div class="card">
+            <h3>Project Coordinator Intern - Croma Campus</h3>
+            <p>
+                Worked on Employee Management System using React.js,
+                Java, Spring Boot and MySQL.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>AI Virtual Intern - CodSoft</h3>
+            <p>
+                Worked on AI-based assignments and real-world tasks.
+            </p>
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="card">
+            <ul>
+                <li>Certified Web Design Workshop - SoftPro & AKTU</li>
+                <li>First Position in Junior Class for Academic Excellence</li>
+                <li>Successfully Completed Industry-Based Internships</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="card">
+
+            <p><b>Email:</b> arai44905@gmail.com</p>
+            <p><b>Phone:</b> +91 8081561512</p>
+            <p><b>Location:</b> Greater Noida, Uttar Pradesh</p>
+
+            <p>
+                <b>GitHub:</b> github.com/Ankitrai2906
+            </p>
+
+            <p>
+                <b>LinkedIn:</b> linkedin.com/in/ankit-rai-b6673027
+            </p>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        <h3>Ankit Rai</h3>
+
+        <p>
+            Frontend Developer | React.js Developer | MCA Graduate
+        </p>
+
+        <p>
+            © 2026 All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
